@@ -36,6 +36,14 @@ export class AppSidebarNavLinkComponent implements OnInit {
     }
     return classes;
   }
+  
+  public getQueryParams() {
+    return this.link.queryParams ? this.link.queryParams : {};
+  }
+
+  public getActiveOptions() {
+    return this.link.activeOptions ? this.link.activeOptions : '';
+  }
 
   public getLinkType() {
     return this.isExternalLink() ? 'external' : 'link';
