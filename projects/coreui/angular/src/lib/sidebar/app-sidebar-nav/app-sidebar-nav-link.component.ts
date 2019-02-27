@@ -38,11 +38,11 @@ export class AppSidebarNavLinkComponent implements OnInit {
   }
   
   public getQueryParams() {
-    return this.link.queryParams ? this.link.queryParams : {};
+    return this.item.queryParams ? this.item.queryParams : {};
   }
 
   public getActiveOptions() {
-    return this.link.activeOptions ? this.link.activeOptions : '';
+    return this.item.activeOptions ? this.item.activeOptions : '';
   }
 
   public getLinkType() {

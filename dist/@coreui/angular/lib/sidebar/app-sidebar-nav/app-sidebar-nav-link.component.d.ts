@@ -14,6 +14,8 @@ export declare class AppSidebarNavLinkComponent implements OnInit {
         'disabled': boolean;
         'btn-link': boolean;
     };
+    getQueryParams(): any;
+    getActiveOptions(): any;
     getLinkType(): "link" | "external";
     hasVariant(): boolean;
     isDisabled(): boolean;
